@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="spec_RegisterUser.xml" parallel="tests" thread-count="3">
+
+    <test name="RegisterPageChrome">
+        <classes>
+            <parameter name="browser" value="chrome" />
+            <class
+                name="testCases.RegisterPage" />
+        </classes>
+    </test>  
+     <!--
+           <test name="RegisterPageFireFox">
+        <classes>
+            <parameter name="browser" value="firefox" />
+            <class
+                name="testCases.RegisterPage" />
+        </classes>
+    </test>
+    -->
+
+</suite>
